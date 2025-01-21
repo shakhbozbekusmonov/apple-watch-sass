@@ -5,27 +5,28 @@
 }
 
 @mixin title {
-	font-family: $font-family;
 	font-size: 50px;
 	line-height: 120%;
-	text-align: center;
 	color: $color-primary;
 }
 
 @mixin description {
-	font-family: $font-family;
+	position: relative;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
 	color: $color-secondary;
+	padding-left: 40px;
+	margin: 30px 0;
 
 	&::before {
+		position: absolute;
+		left: 0;
 		content: '';
 		display: block;
 		border: 3px solid $border-color;
 		width: 3px;
 		height: 100%;
-		margin-right: 40px;
 	}
 }
 
@@ -36,5 +37,6 @@
 	line-height: 150%;
 	text-transform: uppercase;
 	color: #fff;
-  background-color: $btn-color;
+	background-color: $btn-color;
+	border: none;
 }

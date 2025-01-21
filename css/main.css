@@ -450,4 +450,56 @@ main {
   line-height: 150%;
   text-align: center;
   color: #666;
+}
+
+.hero {
+  padding-top: 140px;
+  padding-bottom: 183px;
+  background-image: url("../../images/intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 660px) bottom;
+  background-size: 587px;
+  border-bottom: 3px solid #888;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/intro-bg@2x.png");
+  }
+}
+.hero__content {
+  width: 100%;
+  max-width: 490px;
+}
+.hero__title {
+  font-size: 50px;
+  line-height: 120%;
+  color: #000;
+}
+.hero__desc {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777;
+  padding-left: 40px;
+  margin: 30px 0;
+}
+.hero__desc::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  border: 3px solid #888;
+  width: 3px;
+  height: 100%;
+}
+.hero__btn {
+  padding: 12px 38px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ea625c;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
