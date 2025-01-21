@@ -1,0 +1,35 @@
+.hero {
+	padding-top: 140px;
+	padding-bottom: 183px;
+	background-image: url('../../images/intro-bg.png');
+	background-repeat: no-repeat;
+	background-position: calc(50% + 660px) bottom;
+	background-size: 587px;
+	border-bottom: 3px solid $border-color;
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (-o-min-device-pixel-ratio: 2/1),
+		only screen and (min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+		background-image: url('../../images/intro-bg@2x.png');
+	}
+
+	&__content{
+		width: 100%;
+		max-width: 490px;
+	}
+
+	&__title{
+		@include title;
+	}
+
+	&__desc{
+		@include description;
+	}
+
+	&__btn{
+		@include btn;
+	}
+}
